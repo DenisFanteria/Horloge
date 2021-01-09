@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-menu">
+        <h3>Jeudi 7 janvier</h3>
+        <div class="battery">
+          <span>42%</span>
+          <img src="low.svg" alt="battery" />
+        </div>
+      </div>
+      <div class="clock">
+        <div class="wrap">
+          <span class="hour"></span>
+          <span class="minute"></span>
+          <span class="second"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="timing">
+          <span> <span class="hours"></span>:<span class="mins"></span> </span>
+
+          <p>Jeudi 7 janvier</p>
+          <label for="format">
+            <input type="checkbox" id="format" onclick="clock()" />Format
+            24h</label
+          >
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </body>
+</html>
